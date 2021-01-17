@@ -1,0 +1,110 @@
+FORMAT: 1A
+HOST: http://10.22.135.98:5000/
+
+# Our Rest API
+
+This is an API to retrieve data from our Database.
+This is a public API so there is no need for special authentication.
+However our Flask server for responses to your requests is only active on request.
+
+    
+####Base URL
+
+Users must prepend all resource calls with this base URL:
+
+http://10.22.135.98:5000/ 
+
+you need to be connected to the VPN of the university for contact this server 
+
+####GET
+
+#### Authentication
+
+There is no authentication necessary for the Backup Server.
+This is a public API.
+
+
+## Request accident information [/accident]
+
+### Get query for accidents [GET]
+
++ Response 200 (application/json)
+
+        {
+          "data": [
+            {
+              "Heure": 1610745827.342483,
+              "cause": 4,
+              "gps": [
+                10,
+                10
+              ]
+            },
+            {
+              "Heure": 1610745830.432967,
+              "cause": 4,
+              "gps": [
+                10,
+                10
+              ]
+            },
+            {
+              "Heure": 1610745937.952394,
+              "cause": 4,
+              "gps": [
+                10,
+                10
+              ]
+            },
+            {
+              "Heure": 1610747379.072425,
+              "cause": 4,
+              "gps": [
+                10,
+                10
+              ]
+            }
+          ]
+        }
+
+## Request bottling information [/embouteillage]
+
+### Get request for traffic jams  [GET]    
++ Response 200 (application/json)
+
+                {
+          "data": [
+            {
+              "Heure": 1610745827.342483,
+              "cause": 4,
+              "gps": [
+                10,
+                10
+              ]
+            },
+            {
+              "Heure": 1610745830.432967,
+              "cause": 4,
+              "gps": [
+                10,
+                10
+              ]
+            },
+            {
+              "Heure": 1610745937.952394,
+              "cause": 4,
+              "gps": [
+                10,
+                10
+              ]
+            },
+            {
+              "Heure": 1610747379.072425,
+              "cause": 4,
+              "gps": [
+                10,
+                10
+              ]
+            }
+          ]
+        }
